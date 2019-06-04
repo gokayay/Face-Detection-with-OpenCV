@@ -1,0 +1,16 @@
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+
+def smoothingf():
+    img = cv2.imread('image.jpg')
+
+    blur = cv2.blur(img, (5, 5))
+
+   # plt.subplot(121), plt.imshow(img), plt.title('Original')
+   # plt.xticks([]), plt.yticks([])
+   # plt.subplot(122), plt.imshow(blur), plt.title('Blurred')
+    #plt.xticks([]), plt.yticks([])
+    #plt.show()
+
+    cv2.imshow('Image Smoothing',blur)
